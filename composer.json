@@ -1,0 +1,21 @@
+{
+    "name": "rodber/ext-ds-reflection",
+    "description": "Showcase reflection issues in ext-ds",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rodolfo Berrios",
+            "email": "rodolfo@chevere.org",
+            "homepage": "https://chevere.org"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-ds": "*",
+        "php-ds/php-ds": "^1.4"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.0"
+    }
+}
