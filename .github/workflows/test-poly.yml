@@ -7,22 +7,12 @@ jobs:
       matrix:
         os: [ubuntu-20.04]
         php: ["8.0", "8.1"]
-    env:
-      tools: composer
-      key: cache-1648922780567
     name: PHP ${{ matrix.php }} test on ${{ matrix.os }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Setup cache environment
-        if: ${{ !env.ACT }}
-        id: extcache
-        uses: shivammathur/cache-extensions@v1
-        with:
-          php-version: ${{ matrix.php }}
-          key: ${{ env.key }}
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:

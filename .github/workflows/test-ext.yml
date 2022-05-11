@@ -9,8 +9,6 @@ jobs:
         php: ["8.0", "8.1"]
     env:
       extensions: ds
-      tools: composer
-      key: cache-1648922780567
     name: PHP ${{ matrix.php }} test on ${{ matrix.os }}
     steps:
       - name: Checkout
